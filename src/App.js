@@ -30,7 +30,7 @@ function App() {
           <div className='content'>
             <p>Current Date is <b>{moment(new Date()).format('Do MMMM YYYY')}</b></p>
             <p>Selected Date is <b>{moment(date).format('Do MMMM YYYY')}</b></p>
-            <Button onClick={share} className='buttonStyle'>Share Me</Button>
+            <Button onClick={share} className='buttonStyle'>{ !visible ? `Share Me`: `back` }</Button>
           </div>
       </div>
   
